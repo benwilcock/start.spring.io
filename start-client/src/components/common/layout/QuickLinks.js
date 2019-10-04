@@ -67,7 +67,7 @@ class QuickLinks extends React.Component {
           </li>
           <li>
             <a
-              href='https://github.com/spring-io/start.spring.io'
+              href='https://github.com/AxonFramework'
               rel='noreferrer noopener'
               target='_blank'
               tabIndex='-1'
@@ -78,7 +78,7 @@ class QuickLinks extends React.Component {
           </li>
           <li>
             <a
-              href='https://twitter.com/springboot'
+              href='https://twitter.com/axonframework'
               rel='noreferrer noopener'
               target='_blank'
               tabIndex='-1'
@@ -108,30 +108,16 @@ class QuickLinks extends React.Component {
                   <ul className='dropdown-menu' ref={this.setWrapperRef}>
                     <li>
                       <a
-                        id='ql-help-projects'
-                        target='_blank'
-                        rel='noopener noreferrer'
-                        href='https://spring.io/projects'
-                        tabIndex='-1'
-                        onClick={() => {
-                          this.setState({ help: false })
-                        }}
-                      >
-                        Spring Projects
-                      </a>
-                    </li>
-                    <li>
-                      <a
                         id='ql-help-guides'
                         target='_blank'
                         rel='noopener noreferrer'
                         tabIndex='-1'
-                        href='https://spring.io/guides'
+                        href='https://docs.axoniq.io/reference-guide/'
                         onClick={() => {
                           this.setState({ help: false })
                         }}
                       >
-                        Spring Guides
+                        Axon Guides
                       </a>
                     </li>
                     <li>
@@ -140,26 +126,12 @@ class QuickLinks extends React.Component {
                         target='_blank'
                         rel='noopener noreferrer'
                         tabIndex='-1'
-                        href='https://spring.io/blog'
+                        href='https://axoniq.io/blog-overview'
                         onClick={() => {
                           this.setState({ help: false })
                         }}
                       >
-                        What's New With Spring
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        id='ql-help-migration'
-                        target='_blank'
-                        rel='noopener noreferrer'
-                        tabIndex='-1'
-                        href='https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-2.0-Migration-Guide'
-                        onClick={() => {
-                          this.setState({ help: false })
-                        }}
-                      >
-                        Migrate from 1.5 => 2.0
+                        Axon Blog
                       </a>
                     </li>
                   </ul>

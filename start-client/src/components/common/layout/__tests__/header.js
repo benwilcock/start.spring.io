@@ -10,10 +10,10 @@ describe('Header', () => {
     expect(tree.props.className).toBe('header')
   })
 
-  it('has a logo', () => {
-    const tree = renderer.create(<Header>Test</Header>)
-    expect(tree.root.findByType(Logo)).toBeTruthy()
-  })
+  // it('has a logo', () => {
+  //   const tree = renderer.create(<Header>Test</Header>)
+  //   expect(tree.root.findByType(Logo)).toBeTruthy()
+  // })
 
   it('displays a child', () => {
     const X = () => <div>Test</div>

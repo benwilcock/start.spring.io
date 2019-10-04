@@ -149,6 +149,28 @@ initializr:
         url: https://oss.sonatype.org/content/repositories/snapshots/
         snapshotsEnabled: true
   dependencies:
+    - name: CQRS and Event Sourcing Tools
+      content:
+        - name: Axon Framework Spring Boot Starter
+          id: axon
+          weight: 95
+          groupId: org.axonframework
+          artifactId: axon-spring-boot-starter
+          scope: runtime
+          description: Provides first class support for CQRS and Event Sourcing in Spring including Aggregates, Events, Event Handlers, and Gateways.
+          keywords:
+            - CQRS
+            - Aggregate
+            - Events
+            - Event Sourcing
+            - Commands
+            - Queries
+          starter: false
+          links:
+            - rel: github
+              href: https://github.com/AxonFramework
+            - rel: guide
+              href: https://docs.axoniq.io/reference-guide/
     - name: Developer Tools
       content:
         - name: Spring Boot DevTools

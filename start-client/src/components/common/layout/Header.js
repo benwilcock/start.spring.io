@@ -8,9 +8,9 @@ const Header = ({ children }) => (
   <div className='header'>
     <h1 className='logo'>
       <Link to='/'>
-        <Logo />
+        {/* <Logo /> */}
         <span className='title'>
-          Spring <strong>Initializr</strong>
+          Axon <strong>Initializr</strong>
         </span>
         <span className='description'>Bootstrap your application</span>
       </Link>

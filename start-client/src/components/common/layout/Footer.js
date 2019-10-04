@@ -3,9 +3,7 @@ import React from 'react'
 const Footer = () => (
   <footer className='footer'>
     <div className='footer-container'>
-      © 2013-{new Date().getFullYear()} Pivotal Software
-      <br />
-      start.spring.io is powered by
+      Axon Initializr is powered by
       <br />
       <span>
         <a
