@@ -1,12 +1,12 @@
 const isDev = process.env.NODE_ENV === 'development'
 
 const siteMetadata = {
-  title: `Spring Initializr`,
+  title: `Axon Initializr`,
   description: `Initializr generates spring boot project with just what you need to start quickly!`,
-  twitter: `@springboot`,
-  canonical: `https://start.spring.io`,
-  author: `@springboot`,
-  image: `https://cocky-roentgen-4351af.netlify.com/images/initializr-card.jpg`,
+  twitter: `@axonframework`,
+  canonical: `https://axon-initializr.cfapps.io`,
+  author: `@axonframework`,
+  image: `https://github.com/AxonFramework/AxonFramework/blob/f48c004c6b5b8e7db9a0c876e0b86af1b0f55328/documentation/src/main/resources/images/logo.png?raw=true`,
   apiUrl: isDev ? `/api.json` : `/metadata/client`,
   apiZip: `/starter.zip`,
 }

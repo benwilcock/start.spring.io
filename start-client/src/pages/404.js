@@ -14,10 +14,10 @@ const NotFoundPage = () => (
       <p>You can navigate to the following pages:</p>
       <ul>
         <li>
-          <Link to='/'>Start with Spring Initializr</Link>
+          <Link to='/'>Start with Axon Initializr</Link>
         </li>
         <li>
-          <a href='https://spring.io'>Navigate to spring.io</a>
+          <a href='https://axoniq.io'>Navigate to axoniq.io</a>
         </li>
       </ul>
     </div>

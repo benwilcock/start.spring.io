@@ -12,7 +12,7 @@ const Header = ({ children }) => (
         <span className='title'>
           Axon <strong>Initializr</strong>
         </span>
-        <span className='description'>Bootstrap your application</span>
+        <span className='description'>Bootstrap Event Driven Apps</span>
       </Link>
     </h1>
     {children}

@@ -26,6 +26,10 @@ spring:
       thread-name-prefix: initializr-
 
 initializr:
+  group-id:
+    value: com.wayland
+  artifact-id:
+    value: nostromo
   env:
     boms:
       azure:
@@ -152,25 +156,114 @@ initializr:
     - name: CQRS and Event Sourcing Tools
       content:
         - name: Axon Framework Spring Boot Starter
-          id: axon
-          weight: 95
+          id: axon-starter
+          weight: 1000
           groupId: org.axonframework
           artifactId: axon-spring-boot-starter
-          scope: runtime
+          version: 4.2
           description: Provides first class support for CQRS and Event Sourcing in Spring including Aggregates, Events, Event Handlers, and Gateways.
           keywords:
-            - CQRS
-            - Aggregate
-            - Events
-            - Event Sourcing
-            - Commands
-            - Queries
+            - axon
+            - cqrs
+            - aggregate
+            - event
+            - sourcing
+            - command
+            - query
           starter: false
           links:
             - rel: github
               href: https://github.com/AxonFramework
             - rel: guide
               href: https://docs.axoniq.io/reference-guide/
+        - name: Axon Test
+          description: Axon TDD testing support
+          id: axon-test
+          groupId: org.axonframework
+          artifactId: axon-test
+          version: 4.2
+          scope: test
+          starter: false
+          keywords:
+            - test
+            - axon
+        - name: Axon AMQP
+          description: Axon support for AMQP messaging servers like RabbitMQ
+          id: axon-amqp
+          groupId: org.axonframework.extensions.amqp
+          artifactId: axon-amqp
+          version: 4.2
+          starter: false
+        - name: Axon AMQP Spring Boot Starter
+          description: Axon Spring Boot Starter for AMQP messaging servers like RabbitMQ
+          id: axon-amqp-starter
+          groupId: org.axonframework.extensions.amqp
+          artifactId: axon-amqp-spring-boot-starter
+          version: 4.2
+          starter: false
+        - name: Axon Spring Cloud
+          description: Axon support for Spring Cloud components like Registry
+          id: axon-springcloud
+          groupId: org.axonframework.extensions.springcloud
+          artifactId: axon-springcloud
+          version: 4.2
+          starter: false
+        - name: Axon Spring Cloud Spring Boot Starter
+          description: Axon Spring Boot support for Spring Cloud components like Registry
+          id: axon-springcloud-starter
+          groupId: org.axonframework.extensions.springcloud
+          artifactId: axon-springcloud-spring-boot-starter
+          version: 4.2
+          starter: false
+        - name: Axon Kafka
+          description: Axon support for Kafka based messaging
+          id: axon-kafka
+          groupId: org.axonframework.extensions.kafka
+          artifactId: axon-kafka
+          version: 4.0-RC2
+          starter: false
+        - name: Axon Kafka Spring Boot Starter
+          description: Axon support for Kafka based messaging
+          id: axon-kafka-starter
+          groupId: org.axonframework.extensions.kafka
+          artifactId: axon-kafka-spring-boot-starter
+          version: 4.0-RC2
+          starter: false
+        - name: Axon Mongo
+          description: Axon support for Mongo DB as a data store
+          id: axon-mongo
+          groupId: org.axonframework.extensions.mongo
+          artifactId: axon-mongo
+          version: 4.2
+          starter: false
+        - name: Axon Tracing
+          description: Axon support for detailed tracing
+          id: axon-tracing
+          groupId: org.axonframework.extensions.tracing
+          artifactId: axon-tracing
+          version: 4.2-M1
+          starter: false
+        - name: Axon Tracing Spring Boot Starter
+          description: Axon support for detailed tracing
+          id: axon-tracing-starter
+          groupId: org.axonframework.extensions.tracing
+          artifactId: axon-tracing-spring-boot-starter
+          version: 4.2-M1
+          starter: false
+        - name: Axon JGroups
+          description: Axon support for JGroups
+          id: axon-jgroups
+          groupId: org.axonframework.extensions.jgroups
+          artifactId: axon-jgroups
+          version: 4.2
+          starter: false
+        - name: Axon JGroups Sping Boot Starter
+          description: Axon Spring Boot support for JGroups
+          id: axon-jgroups-starter
+          groupId: org.axonframework.extensions.jgroups
+          artifactId: axon-jgroups-spring-boot-starter
+          version: 4.2
+          starter: false
     - name: Developer Tools
       content:
         - name: Spring Boot DevTools
