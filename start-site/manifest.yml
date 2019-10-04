@@ -1,0 +1,4 @@
+---
+applications:
+ - name: axon-initializr
+   path: ./target/start-site-exec.jar
